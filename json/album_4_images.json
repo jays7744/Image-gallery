@@ -1,0 +1,8 @@
+{
+  "images": [
+    {"image_id": 10, "album_id": 4, "image_title": "Sparrow", "image_url": "images/10.jpg"},
+    {"image_id": 11, "album_id": 4, "image_title": "Pigeon", "image_url": "images/11.jpg"},
+    {"image_id": 12, "album_id": 4, "image_title": "Eagle", "image_url": "images/12.jpg"}
+  ]
+}
+

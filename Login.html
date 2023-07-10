@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="../Practical task 1/login.css">
+</head>
+
+<body>
+<script>
+    if(localStorage.getItem("Username") != ""){
+        window.location = "Gallary1.html";
+    } 
+</script>
+
+    <header id="demo">
+
+        <div id="container">
+            <div class="menu">
+                <div class="dot"> </div>
+                <div class="dot"> </div>
+                <div class="dot"> </div>
+            </div>
+            <div class="te">
+                <h1>Welcome back</h1>
+                <p> Please Enter Your Details Here.</p>
+
+                <p> <label for="">Login Id:</label><br>
+                    <input type="text" value="" placeholder="Enter Your Id" id="D" class="sp">
+                </p>
+                <p><label for="">Password:</label><br>
+                    <input type="password" value="" placeholder="Enter Your Password" id="pas" class="sp">
+                </p>
+
+                <button onclick="Click()">Sign in</button>
+                <div class="error"></div>
+            </div>
+        </div>
+    </header>
+
+    <script>
+        function Click() {
+            const ht = new XMLHttpRequest();
+            ht.onload = function () {
+                const Obj = JSON.parse(this.responseText);
+                var id = document.getElementById("D").value;
+                var pass = document.getElementById("pas").value;
+                for (let x in Obj["users"]) {
+                    
+                    console.log(Obj["users"][x].username);
+                    console.log(Obj["users"][x].password);
+
+                    if (Obj["users"][x].username == id && Obj["users"][x].password == pass) {
+                         localStorage.setItem("Username",id);
+                         window.location="Gallary1.html";
+                    }
+                     else { document.getElementsByClassName("error")[0].innerHTML = "Incorrect Id or Password" };
+               //break;
+               
+                    }
+
+                    
+            }
+            ht.open("GET", "json/users.json");
+            ht.send();
+        }
+    </script>
+
+
+
+</body>
+
+</html>

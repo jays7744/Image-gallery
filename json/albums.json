@@ -1,0 +1,9 @@
+{
+  "albums": [
+    {"album_id": 1, "title": "Animals", "date": "3rd oct 2021", "album_image_url": "images/a1.jpg"},
+    {"album_id": 2, "title": "Places", "date": "25th apr 2021", "album_image_url": "images/a2.jpg"},
+    {"album_id": 3, "title": "Mountains", "date": "23rd jan 2021", "album_image_url": "images/a3.jpg"},
+    {"album_id": 4, "title": "Birds", "date": "13th dec 2021", "album_image_url": "images/a4.jpg"}
+  ]
+}
+

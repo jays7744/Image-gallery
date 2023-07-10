@@ -1,0 +1,8 @@
+{
+  "images": [
+    {"image_id": 4, "album_id": 2, "image_title": "Goa", "image_url": "images/4.jpg"},
+    {"image_id": 5, "album_id": 2, "image_title": "Mumbai", "image_url": "images/5.jpg"},
+    {"image_id": 6, "album_id": 2, "image_title": "Kerala", "image_url": "images/6.jpg"}
+  ]
+}
+

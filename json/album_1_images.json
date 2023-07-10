@@ -1,0 +1,8 @@
+{
+  "images": [
+    {"image_id": 1, "album_id": 1, "image_title": "Lion", "image_url": "images/1.jpg"},
+    {"image_id": 2, "album_id": 1, "image_title": "Tiger", "image_url": "images/2.jpg"},
+    {"image_id": 3, "album_id": 1, "image_title": "Cheetah", "image_url": "images/3.jpg"}
+  ]
+}
+
